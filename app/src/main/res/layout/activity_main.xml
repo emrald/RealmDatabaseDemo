@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.trivediinfoway.realmdatabasedemo.MainActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtadd"/>
+    <EditText
+        android:id="@+id/edtadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textColorHint="#000"
+        android:layout_above="@+id/tvadd"/>
+<TextView
+    android:id="@+id/tvadd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    android:textColor="#000"
+    android:layout_marginTop="5dp"
+    android:layout_above="@+id/tvdelete"
+    android:text="Add"/>
+    <TextView
+        android:id="@+id/tvdelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="Delete"/>
+</RelativeLayout>
